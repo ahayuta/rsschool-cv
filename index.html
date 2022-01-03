@@ -16,18 +16,34 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="navbar">
+        <nav class="navbar">
           <ul class="navbar__list">
-            <li class="navbar__element">Name</li>
-            <li class="navbar__element">Contacts</li>
-            <li class="navbar__element">Info</li>
-            <li class="navbar__element">Skills</li>
-            <li class="navbar__element">Code example</li>
-            <li class="navbar__element">Experience</li>
-            <li class="navbar__element">Education</li>
-            <li class="navbar__element">English</li>
+            <li class="navbar__element">
+              <a href="#name" class="navbar__link">Name</a>
+            </li>
+            <li class="navbar__element">
+              <a href="#contacts" class="navbar__link">Contacts</a>
+            </li>
+            <li class="navbar__element">
+              <a href="#info" class="navbar__link">Info</a>
+            </li>
+            <li class="navbar__element">
+              <a href="#skills" class="navbar__link">Skills</a>
+            </li>
+            <li class="navbar__element">
+              <a href="#code" class="navbar__link">Code</a>
+            </li>
+            <li class="navbar__element">
+              <a href="#experience" class="navbar__link">Experience</a>
+            </li>
+            <li class="navbar__element">
+              <a href="#education" class="navbar__link">Education</a>
+            </li>
+            <li class="navbar__element">
+              <a href="#english" class="navbar__link">English</a>
+            </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </header>
     <main class="main">
@@ -37,13 +53,13 @@
           <img src="img/cat.jpg" alt="cat ran away" class="hello__img" />
         </div>
         <div class="name">
-          <h2 class="name__title">Name:</h2>
+          <h2 class="name__title" id="name">Name:</h2>
           <h3 class="name__user">John Smith</h3>
           <img src="img/cat2.jpg" alt="cat ran away" class="name__avatar" />
           <p class="name__mem">this is me</p>
         </div>
         <div class="contacts">
-          <h2 class="contacts__title">Contacts:</h2>
+          <h2 class="contacts__title" id="contacts">Contacts:</h2>
           <ul class="contacts__list">
             <li class="contacts__element">
               @ahayuta in rs-school discord server.
@@ -54,7 +70,7 @@
           </ul>
         </div>
         <div class="info">
-          <h2 class="info__title">Info:</h2>
+          <h2 class="info__title" id="info">Info:</h2>
           <span class="info__text"
             >20 years old, Saint Petersburg, Russia. My goal is to become a
             frontend developer. I am always glad to learn new things in
@@ -62,7 +78,7 @@
           >
         </div>
         <div class="skills">
-          <h2 class="skills__title">Skills:</h2>
+          <h2 class="skills__title" id="skills">Skills:</h2>
           <h3 class="skills__level">Average level</h3>
           <ul class="skills__average">
             <li class="skills__element">html</li>
@@ -79,7 +95,7 @@
           </ul>
         </div>
         <div class="code">
-          <h2 class="code__title">Code example:</h2>
+          <h2 class="code__title" id="code">Code example:</h2>
           <p class="code__task">
             <b> Task:</b> The input is a three-digit integer number, and then a
             digit. Print true if this digit is the average of the number (tens
@@ -89,7 +105,7 @@
           <p class="code__answer">
             <b>Code:</b>
           </p>
-          <pre>
+          <pre class="code__test">
 import java.util.Scanner;
 
             class Example {
@@ -115,7 +131,7 @@ import java.util.Scanner;
           >
         </div>
         <div class="experience">
-          <h2 class="experience__title">Experience:</h2>
+          <h2 class="experience__title" id="experience">Experience:</h2>
           <span class="experience__text"
             >Tour-plan site:
             <a href="https://github.com/ahayuta/tour-plan"
@@ -126,7 +142,7 @@ import java.util.Scanner;
           >
         </div>
         <div class="education">
-          <h2 class="education__title">Education:</h2>
+          <h2 class="education__title" id="education">Education:</h2>
           <p class="education__text">
             Self-study on the Internet. Lots of different videos and articles.
             And if we talk about my university education, then I specialize in
@@ -134,7 +150,7 @@ import java.util.Scanner;
           </p>
         </div>
         <div class="english">
-          <h2 class="english__title">English:</h2>
+          <h2 class="english__title" id="english">English:</h2>
           <p class="english__text">
             It so happened that I can understand and read quite well in English,
             but it’s still hard for me to speak it. Therefore, I would say that
