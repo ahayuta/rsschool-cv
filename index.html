@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,5 +13,111 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="navbar">
+          <ul class="navbar__list">
+            <li class="navbar__element">Name</li>
+            <li class="navbar__element">Contacts</li>
+            <li class="navbar__element">Info</li>
+            <li class="navbar__element">Skills</li>
+            <li class="navbar__element">Code example</li>
+            <li class="navbar__element">Experience</li>
+            <li class="navbar__element">Education</li>
+            <li class="navbar__element">English</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="name">
+          <h1 class="name__title">Name:</h1>
+          <h2 class="name__user">John Smith</h2>
+        </div>
+        <div class="contacts">
+          <h1 class="contacts__title">Contacts:</h1>
+          <ul class="contacts__list">
+            <li class="contacts__element">
+              @ahayuta in rs-school discord server.
+            </li>
+            <li class="contacts__element">
+              <a href="mailto:forstudynb@gmail.com">forstudynb@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="info">
+          <h1 class="info__title">Info:</h1>
+          <span class="info__text"
+            >20 years old, Saint Petersburg, Russia. My goal is to become a
+            frontend developer. I am always glad to learn new things in
+            different areas of our universe.</span
+          >
+        </div>
+        <div class="skills">
+          <h1 class="skills__title">Skills:</h1>
+          <h3 class="skills__level">Average level</h3>
+          <ul class="skills__average">
+            <li class="skills__element">html</li>
+            <li class="skills__element">css</li>
+            <li class="skills__element">flexbos css</li>
+            <li class="skills__element">git</li>
+            <li class="skills__element">sass</li>
+            <li class="skills__element">figma</li>
+          </ul>
+          <h3 class="skills__level">Low level</h3>
+          <ul class="skills__low">
+            <li>JS</li>
+            <li>css grid</li>
+          </ul>
+        </div>
+        <div class="code">
+          <h1 class="code__title">Code example:</h1>
+          <p class="code__task">
+            <b> Task:</b> The input is a three-digit integer number, and then a
+            digit. Print true if this digit is the average of the number (tens
+            place), and false if not. If the entered number is not three-digit,
+            print "error".
+          </p>
+          <p class="code__answer">
+            <b>Code:</b>
+          </p>
+          <pre>
+import java.util.Scanner;
+
+            class Example {
+            public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            if (a < 0) {a _= -1;}
+            if (b < 0) {b _= -1;}
+            String x = Integer.toString(a);
+            String y = Integer.toString(b);
+            char a1 = x.charAt(1);
+            char a2 = y.charAt(0);
+            int f = a1;
+            int g = a2;
+            if (a < 100 || a > 999) {
+            System.out.println("error");
+            } else if (f == g) {
+            System.out.println("true");
+            } else System.out.println("false");
+            }
+            }</pre
+          >
+        </div>
+        <div class="experience">
+          <h1 class="experience__title">Experience:</h1>
+          <span class="experience__text"></span>
+        </div>
+        <div class="education"></div>
+        <div class="english"></div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container"></div>
+    </footer>
+  </body>
 </html>
