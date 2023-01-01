@@ -11,6 +11,12 @@ body {
   margin: auto;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #010201;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -321,6 +327,44 @@ template {
   display: none;
 }
 
-* {
-  background-color: #fff;
+.header {
+  background-color: #EDF2EC;
+  padding-top: 26px;
+  padding-bottom: 42px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__title {
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  min-width: 452px;
+  padding-left: 0;
+}
+
+.nav-link {
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 50px;
+  color: #010201;
 }/*# sourceMappingURL=style.css.map */
